@@ -13,3 +13,12 @@ Sample Input:
 Sample Output:
 38
 """
+birth_year = int(input())
+current_year = int(input())
+
+if current_year < birth_year:
+    current_year += 100  
+
+age = current_year - birth_year
+
+print(age)
