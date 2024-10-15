@@ -17,3 +17,20 @@ L3
 Sample Output:
 L1
 """
+a = int(input()) 
+b = int(input())  
+c = int(input())  
+allocated_lab = input().strip() 
+
+labs = {
+    'L1': a,
+    'L2': b,
+    'L3': c
+}
+
+if allocated_lab in labs:
+    del labs[allocated_lab]
+
+min_lab = min(labs, key=labs.get)
+
+print(min_lab)
