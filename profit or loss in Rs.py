@@ -11,3 +11,17 @@ Sample Input:
 4
 Sample Output:
 Loss : Rs.12.00
+"""
+total_cost = float(input()) 
+selling_price_per_banana = float(input()) 
+
+total_selling_price = selling_price_per_banana * 12
+
+profit_or_loss = total_selling_price - total_cost
+
+if profit_or_loss > 0:
+    print(f"Profit : Rs.{profit_or_loss:.2f}")
+elif profit_or_loss < 0:
+    print(f"Loss : Rs.{abs(profit_or_loss):.2f}")
+else:
+    print("No Profit No Loss")
