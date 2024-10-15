@@ -11,3 +11,13 @@ Sample Input:
 8
 Sample Output:
 6 less than 8
+"""
+x = int(input())
+y = int(input())
+
+if x == y:
+    print(f"{x} and {y} are equal")
+elif x > y:
+    print(f"{x} greater than {y}")
+else:
+    print(f"{x} less than {y}")
