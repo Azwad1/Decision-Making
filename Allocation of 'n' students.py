@@ -18,3 +18,25 @@ Sample Input:
 Sample Output:
 L1
 """
+x = int(input()) 
+y = int(input())
+z = int(input())  
+n = int(input())  
+labs = {
+    'L1': x,
+    'L2': y,
+    'L3': z
+}
+
+suitable_lab = None
+max_capacity = -1
+
+for lab, capacity in labs.items():
+    if capacity >= n:
+        if capacity > max_capacity:
+            max_capacity = capacity
+            suitable_lab = lab
+if suitable_lab:
+    print(suitable_lab)
+else:
+    print("No suitable lab")
