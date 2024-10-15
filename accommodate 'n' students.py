@@ -17,3 +17,18 @@ Sample Input:
 Sample Output:
 2 
 """
+a = int(input())  
+b = int(input())  
+c = int(input())  
+n = int(input())  
+
+count = 0
+
+if a >= n:
+    count += 1
+if b >= n:
+    count += 1
+if c >= n:
+    count += 1
+
+print(count)
